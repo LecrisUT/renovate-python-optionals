@@ -1,1 +1,22 @@
-{}
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Test dependencies",
+      "matchManagers": ["pep621"],
+      "matchDepTypes": ["project.optional-dependencies.test"]
+    },
+    {
+      "groupName": "Docs dependencies",
+      "matchManagers": ["pep621"],
+      "matchDepTypes": ["project.optional-dependencies.docs"]
+    },
+    {
+      "groupName": "Dev dependencies",
+      "matchManagers": ["pep621"],
+      "matchDepTypes": ["dependency-groups.docs"]
+    }
+  ]
+}
