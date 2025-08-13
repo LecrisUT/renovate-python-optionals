@@ -14,5 +14,5 @@ docs = [
 [dependency-groups]
 dev = [
     "pre-commit == 4.2.0",
-    "mypy == 1.17.0",
+    "mypy ==1.17.1",
 ]
