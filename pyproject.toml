@@ -8,7 +8,7 @@ test = [
 ]
 docs = [
     "sphinx == 8.2.2",
-    "furo == 2024.8.6",
+    "furo ==2025.7.19",
 ]
 
 [dependency-groups]
