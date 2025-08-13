@@ -5,18 +5,21 @@
   "packageRules": [
     {
       "groupName": "Test dependencies",
-      "matchManagers": ["pep621"],
-      "matchDepTypes": ["project.optional-dependencies.test"]
+      "matchJsonata": [
+        "manager = 'pep621' and depType = 'project.optional-dependencies' and managerData.depGroup = 'test'"
+      ]
     },
     {
       "groupName": "Docs dependencies",
-      "matchManagers": ["pep621"],
-      "matchDepTypes": ["project.optional-dependencies.docs"]
+      "matchJsonata": [
+        "manager = 'pep621' and depType = 'project.optional-dependencies' and managerData.depGroup = 'docs'"
+      ]
     },
     {
       "groupName": "Dev dependencies",
-      "matchManagers": ["pep621"],
-      "matchDepTypes": ["dependency-groups.docs"]
+      "matchJsonata": [
+        "manager = 'pep621' and depType = 'dependency-groups' and managerData.depGroup = 'dev'"
+      ]
     }
   ]
 }
